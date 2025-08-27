@@ -1,0 +1,22 @@
+/* Make all tables scrollable horizontally */
+table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* forces columns to respect width */
+}
+
+/* Make table cells wrap text and have smaller padding */
+th, td {
+  word-wrap: break-word;
+  white-space: normal; /* allow wrapping */
+  padding: 4px;       /* compact spacing */
+  font-size: 0.85rem; /* smaller text */
+  vertical-align: top; /* align content to top of cell */
+}
+
+/* Optional: add borders for readability */
+table, th, td {
+  border: 1px solid #ccc;
+}
